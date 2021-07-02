@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-02T02:13:47.631Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="fLYGjiCoFm79dJEbVu2L" version="14.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-02T02:19:34.966Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="MpmL5AgZoPVvmPIhBmRb" version="14.8.0" type="github">
   <diagram id="UqTXu5nnU7z2pNqZ6FUm" name="Page-1">
     <mxGraphModel dx="1125" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -158,8 +158,8 @@
         <mxCell id="iOJm5arGjUEbnIHWwRJL-258" value="The release branch" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
           <mxGeometry x="19" y="448" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="iOJm5arGjUEbnIHWwRJL-259" value="The main branch&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
-          <mxGeometry x="20.5" y="362" width="146.75" height="20" as="geometry" />
+        <mxCell id="iOJm5arGjUEbnIHWwRJL-259" value="The main / default branch" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
+          <mxGeometry x="15" y="362" width="179.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="iOJm5arGjUEbnIHWwRJL-260" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="iOJm5arGjUEbnIHWwRJL-255" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -353,7 +353,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VT25-HUHcediwL1PzmHn-3" value="&lt;ul style=&quot;font-size: 15px&quot;&gt;&lt;li&gt;&lt;b&gt;npm-snapshot&amp;nbsp;&lt;/b&gt;(build: npm-build-job, npm-job)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CI_COMMIT_TAG -&amp;gt; never&lt;/li&gt;&lt;li&gt;CI_COMMIT_BRANCH &amp;amp;&amp;amp; CI_OPEN_MERGE_REQUESTS -&amp;gt; never&lt;/li&gt;&lt;li&gt;CI_COMMIT_BRANCH != CI_DEFAULT_BRANCH -&amp;gt; on_success&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;npm-release&amp;nbsp;&lt;/b&gt;(build: npm-build-job, npm-job)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CI_COMMIT_TAG -&amp;gt; on_success&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;npm-test &lt;/b&gt;(test: npm-job) /&lt;b&gt;&amp;nbsp;npm-build-image&lt;/b&gt; (test: npm-test, npm-job)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CI_COMMIT_BRANCH &amp;amp;&amp;amp; CI_OPEN_MERGE_REQUESTS -&amp;gt; never&lt;/li&gt;&lt;li&gt;CI_COMMIT_TAG -&amp;gt; on_success&lt;/li&gt;&lt;li&gt;CI_COMMIT_BRANCH != CI_DEFAULT_BRANCH -&amp;gt; on_success&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;npm-deploy-snapshot&lt;/b&gt; (release: npm-publish, npm-job)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CI_COMMIT_TAG -&amp;gt; never&lt;/li&gt;&lt;li&gt;CI_COMMIT_BRANCH &amp;amp;&amp;amp; CI_OPEN_MERGE_REQUESTS -&amp;gt; never&lt;/li&gt;&lt;li&gt;CI_COMMIT_BRANCH != CI_DEFAULT_BRANCH -&amp;gt; on_success&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;npm-deploy-release&amp;nbsp;&lt;/b&gt;(release: npm-publish, npm-job)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CI_COMMIT_TAG -&amp;gt; on_success&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
-          <mxGeometry x="35" y="663" width="780" height="397" as="geometry" />
+          <mxGeometry x="35" y="663" width="585" height="397" as="geometry" />
         </mxCell>
         <mxCell id="iOJm5arGjUEbnIHWwRJL-276" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" edge="1" source="iOJm5arGjUEbnIHWwRJL-277">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
